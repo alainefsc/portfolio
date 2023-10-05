@@ -3,55 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Niconne&display=swap');
-      </style>
     <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="background">
-        <header>
-            <div class="logo">
-                <i class="fa-brands fa-autoprefixer"></i>
-            </div>
-            <div class="cabeçalho-link">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Sobre</a>
-                </li>
-                <li>
-                    <a href="#">Serviços</a>
-                </li>
-                <li>
-                    <a href="#">Trabalho</a>
-                </li>
-                <button>Meu contato</button>
-            </div> <!--div cabeçalho-->
-        </header>
-
-        <div class="container-text">
-        <div class="text"> 
-<h3>Olá, pessoal</h3>
-<h1> Eu sou <span>Alaíne Fonseca</span></h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Cupiditate quas vitae vel fugit blanditiis facere doloribus veritatis atque mollitia magnam, ratione provident labore explicabo!<br> Itaque id eligendi voluptatem quo eius.</p>
-       <div class="redes-sociais">
-<a href="#"><i class="fa-brands fa-facebook"></i></a>
-<a href="#"><i class="fa-brands fa-instagram"></i></a>
-<a href="#"><i class="fa-brands fa-github"></i></a>
-<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-<a href="#"><i class="fa-solid fa-envelope"></i></a>
-
-       </div> <!--redes sociais-->
-       <div class="btn-roxo">
-       <button class="btn">Sobre Mim</button>
-    </div><!--botao roxo-->
-</div> <!--div text-->
-        </div><!--div  container -text-->
-  
     
+   <header>
+    <h1> Dev <span>Saber</span></h1>
+    <nav>
+        <ul class="navegaçao-primaria">
+            <li><a href="#Home"> Home</a></li>
+            <li><a href="#About">About me</a></li>
+            <li><a href="#Resume">Resumo</a></li>
+            <li><a href="#Portfólio">Portfólio</a></li>
+            <li><a href="#Princing">Princing</a></li>
+            <li><a href="Contact">Contact</a></li>
+          
+        </ul>
+    </nav>
+    
+    <i class="fa-solid fa-bars"></i>
+
+   </header>
+
+   <section aria-label="seção currículo download Alaíne" class="section-div">
+<div>
+    <h2>Hi, there! I'm </h2>
+    <h2 class="digitando"> Front End / UX Design</h2>
+    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa debitis voluptatem sed, excepturi alias hic iste, est nulla sequi ea itaque aliquam magnam sit. Vel possimus harum temporibus aliquam.</p>
+<a href="#">Download CV</a>
+</div>
+<img src="imagens/avatar.png" alt="avatar">
+   </section>
+
+   <main>
+
+    <article aria-label="seção sobre mim" class="sobre">
+
+        <div class="sobre-titulo">
+
+            <h1>About Me</h1>
+            <p>Perfil Profissional- There is all about me</p>
+    
+        <div aria-label="seção apenas de ilustrações de botões">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </div>
+        <img src="imagens/eu1.jpeg" alt="minha foto">
+    
+        <div class="sobre-conteudo">
+            <div class="sobre-texto">
+                <h1>Eu sou Dev Saber - Alaíne</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, recusandae architecto aperiam nobis, quam ullam deserunt voluptas, libero qui molestias omnis commodi debitis est ab deleniti quae fugiat animi perspiciatis.
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, eaque fugiat! Doloremque, fugiat optio! Deleniti, qui provident saepe eligendi veritatis exercitationem consequuntur tempore repellat dolorum? Totam, reiciendis recusandae! Aut, assumenda.
+                </p>
+            </div>
+            <div class="sobre-info">
+                <p><i class="fa-solid fa-calendar-days"></i> Data de nascimento- 27-07-89</p>
+                <p><i class="fa-sharp fa-solid fa-laptop-code"></i> Freelance- Disponível</p>
+                <p><i class="fa-solid fa-location-dot"></i> Cidade -Salvador, Bahia</p>
+                <p><i class="fa-sharp fa-solid fa-globe"></i> Idiomas falados- Português, Inglês.</p>
+                <p><i class="fa-solid fa-flag"></i> Nacionalidade - Brasil</p>
+                <p><i class="fa-solid fa-phone-volume"></i> Fone- 55 719999-9999</p>
+                <p><i class="fa-solid fa-envelope"></i> Email- fscdev@gmail.com</p>
+            </div>
+        </div>
+    </article>
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
