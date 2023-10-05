@@ -36,17 +36,35 @@ body{
 
   header .navegaçao-primaria{ 
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
   }
 
   header .navegaçao-primaria li a { 
-    padding: 10px;
     color: rgb(231, 238, 245);
+    width: 0px;
+    height: 0px;
     font-size: 1.3rem;
   }
 
+  
+  header .navegaçao-primaria li a ::after{ 
+    content: '';
+    width: 0px;
+    height: 0px;
+    display: block;
+    border-bottom:4px solid transparent;
+    transition:.9s;
 
+  }
+
+  header .navegaçao-primaria li a:hover::after {
+    width: 100%;
+    height: 0px; 
+    padding: 0px;
+    border-bottom: 4px solid #dc4535;
+ }
+ 
 
   /*Dowmload Cv seção*/
 
@@ -274,7 +292,8 @@ animation: sobeSeção .5s ease-in-out forwards;
 
  @media (max-width: 992px) {
     .section div img {
-        display: none;
+        display:none ;
+
     }
 
     .section div {
@@ -283,14 +302,35 @@ animation: sobeSeção .5s ease-in-out forwards;
         background-size: cover;
     }
 
-    header.navegaçao-primaria{ 
-        display: none;
+    header { 
+       justify-content: space-between;
+       padding: 30px 70px;
+    }
+
+    header .navegaçao-primaria{ 
+        display:none;
     }
 
     header i {
         color: #ffffff;
         font-size: 3rem;
     }
+}
+
+  header .navegaçao-primaria.ativado{ 
+    background: linear-gradient( rgba(43,42,42, 0.176), rgba(46,46. 0.724));
+    position: absolute;
+    display: grid;
+    top: 80px;
+    color: white;
+    z-index: 5;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0 0 4px 4px;
+    right: 20px;
+    animation: sobeSeção .8s ease-in-out forwards;
+
 }
 
 
@@ -316,22 +356,20 @@ animation: sobeSeção .5s ease-in-out forwards;
 
   }
  
-.my-service{ 
+  .my-service { 
     padding: 60px;
-
     color: white;
 }
- 
-.my-service ul{ 
-    display: flex;
-flex-wrap: wrap;
-gap: 20px;
-align-items: center;
-justify-content: center;
 
+.my-service ul { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
- 
-.my-service ul li{ 
+
+.my-service ul li { 
     cursor: pointer;
     position: relative;
     padding: 10px;
@@ -345,9 +383,116 @@ justify-content: center;
     border-radius: 6px;
 }
 
-.my-service ul li i{ 
+.my-service ul li i { 
     font-size: 2.7rem;
     color: rgb(226, 110, 43);
 }
 
+.my-service ul li h3 { 
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-family: 'poppins';
+    font-weight: 500;
+}
 
+.my-service ul li p { 
+    font-size: 1.1rem;
+    color: #707070;
+}
+
+.my-service li::before { 
+    content: '';
+    transition: 1s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my-service li::after { 
+    content: '';
+    transition: 1s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my-service li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid rgb(226, 110, 43);
+    border-right: 2px solid rgb(226, 110, 43);
+
+} 
+
+.my-service li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgb(226, 110, 43);
+    border-left: 2px solid rgb(226, 110, 43);
+}
+
+/*seção service*/
+
+.projects{ 
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    background-color: #383737;
+}
+
+.projects ul { 
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.projects-models ul li{ 
+    cursor: pointer;
+    font-family: 'poppins';
+    background-color: #222;
+    border: 1px solid #333;
+    padding: 1px 20px;
+    color: #383737;
+}
+
+.projects-armazenamento ul { 
+    display: grid;
+    margin-top: 60px;
+    gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.projects-armazenamento ul li{ 
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.projects-armazenamento ul li img{ 
+    max-width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.projects a{ 
+    background-color: #222;
+    text-decoration: none;
+    justify-self: center;
+    padding:  20px 40px;
+    border: 1px solid #333;
+    
+}

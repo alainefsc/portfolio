@@ -14,6 +14,12 @@ const título = document.querySelector('.digitando');
 ativaLetra(título);
 
 const ativaMenu = document.querySelector('.fa-bars'); 
+
+
+const navMenu =document.querySelector('header .navegaçao-primaria')
+
+
 ativaMenu.addEventListener('click', () => { 
     ativaMenu.classList.toggle('fa-x'); 
+    navMenu.classList .toggle('ativado')
 });
