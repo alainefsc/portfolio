@@ -351,7 +351,7 @@ animation: sobeSeção .5s ease-in-out forwards;
  .services{
     margin-top: -30px;
     padding: 60px;
-    background-color: #454545;
+    background-color: #111;
 
 
   }
@@ -397,7 +397,7 @@ animation: sobeSeção .5s ease-in-out forwards;
 
 .my-service ul li p { 
     font-size: 1.1rem;
-    color: #707070;
+    color: #f1e7e7;
 }
 
 .my-service li::before { 
@@ -448,7 +448,7 @@ animation: sobeSeção .5s ease-in-out forwards;
     display: grid;
     justify-content: center;
     gap: 30px;
-    background-color: #383737;
+    background-color: #111;
 }
 
 .projects ul { 
@@ -486,6 +486,7 @@ animation: sobeSeção .5s ease-in-out forwards;
     height: 100%;
     border-radius: 4px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .projects a{ 
@@ -495,4 +496,102 @@ animation: sobeSeção .5s ease-in-out forwards;
     padding:  20px 40px;
     border: 1px solid #333;
     
+}
+.projects-armazenamento ul li img:hover {
+    transform: scale(1.05); 
+}
+
+
+/*Footer*/
+
+footer {
+    background-color: #a3a2a2;
+    padding: 30px;
+    text-align: center;
+}
+
+.sobre-titulo h1 {
+    font-size: 1.8rem;
+    color: rgb(226, 110, 43);
+    margin-bottom: 10px;
+}
+
+.sobre-titulo p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.footer-sociais {
+    margin-top: 20px;
+}
+
+.footer-sociais li {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    color: rgb(226, 110, 43);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-sociais li:hover {
+    color: #575353; 
+}
+
+.footer-comercial {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.footer-comercial a {
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-comercial a:hover {
+    text-decoration: underline;
+    color: rgb(226, 110, 43);
+}
+
+/* formulário de contato */
+.contato {
+    background-color: rgb(92, 89, 89);
+    padding: 30px;
+}
+
+.sobre-titulo h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.formulario-contato {
+    display: grid;
+    gap: 10px;
+}
+
+.formulario-contato label {
+    font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formulario-contato button {
+    background-color: rgb(226, 110, 43);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulario-contato button:hover {
+    background-color: rgb(240, 10, 10);
 }

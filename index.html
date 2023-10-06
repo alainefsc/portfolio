@@ -10,16 +10,15 @@
 <body>
     
    <header>
-    <h1> Dev <span>Saber</span></h1>
+    <h1> Ela é <span>Dev</span></h1>
     <nav>
         <ul class="navegaçao-primaria">
             
             <li><a href="#Home"> Home</a></li>
-            <li><a href="#About">About me</a></li>
-            <li><a href="#Resume">Resumo</a></li>
-            <li><a href="#Portfólio">Portfólio</a></li>
-            <li><a href="#Princing">Princing</a></li>
-            <li><a href="Contact">Contact</a></li>
+            <li><a href="#About">Sobre mim</a></li>
+            <li><a href="#Language">Linguagens</a></li>
+            <li><a href="#Portfólio">Projetos</a></li>
+            <li><a href="#Contact">Contato</a></li>
           
         </ul>
     
@@ -29,23 +28,23 @@
 
    </header>
 
-   <section aria-label="seção currículo download Alaíne" class="section-div">
+   <section id="Home" aria-label="seção currículo download Alaíne" class="section-div">
 <div>
-    <h2>Hi, there! I'm </h2>
-    <h2 class="digitando"> Front End / UX Design</h2>
+    <h2>Oi, mundo! </h2>
+    <h2 class="digitando"> Front End /CSS/  JS/ HTML</h2>
     <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat ipsa debitis voluptatem sed, excepturi alias hic iste, est nulla sequi ea itaque aliquam magnam sit. Vel possimus harum temporibus aliquam.</p>
-<a href="#">Download CV</a>
+<a href="imagens/Cv.pdf" target="_blank">Download CV</a>
 </div>
 <img src="imagens/avatar.png" alt="avatar">
    </section>
 
    <main>
 
-    <article aria-label="seção sobre mim" class="sobre">
+    <article  aria-label="seção sobre mim" class="sobre">
 
-        <div class="sobre-titulo">
+        <div id="About" class="sobre-titulo">
 
-            <h1>About Me</h1>
+            <h1>Sobre mim</h1>
             <p>Perfil Profissional- There is all about me</p>
     
         <div aria-label="seção apenas de ilustrações de botões">
@@ -77,10 +76,10 @@
     </article>
    </main>
 
-   <section class="services">
+   <section id="Language" class="services">
     <div class="sobre-titulo">
-    <h1>About Me</h1>
-            <p>Perfil Profissional- There is all about me</p>
+    <h1>Conhecimento </h1>
+            <p>O estudo de linguagens de programação, trouxe conhecimento acerca de estruturação básica e intermediária de uma página web, além de demonstrar os mecanismos de interatividades entre os elementos que a compõe.</p>
     
         <div aria-label="seção apenas de ilustrações de botões">
             <span></span>
@@ -89,7 +88,7 @@
         </div>
         </div>
        <div class="my-service">
-        <ul aria-label="navagaão secundaria">
+        <ul aria-label="navagação secundaria">
             <li>
         
                 <i class="fa-solid fa-pen-to-square"></i>
@@ -111,10 +110,10 @@
 
    </section>
 
-<section class="projects">
+<section id="Portfólio"  class="projects">
     <div class="sobre-titulo">
-        <h1>About Me</h1>
-                <p>Perfil Profissional- There is all about me</p>
+        <h1>Projetos</h1>
+                <p>Os projetos listados fizeram parte do curso Elas na Tech, para obtenção de nota e conhecimento acerca das linguagens estudadas. </p>
         
             <div aria-label="seção apenas de ilustrações de botões">
                 <span></span>
@@ -126,17 +125,18 @@
             <div class="projects-models">
                 <ul aria-label="navegação entre modelos específicos de projetos">
 
-                    <li>Projeto 1</li>
-                    <li>Projeto 2</li>
-                    <li>Projeto 3</li>
-                    <li>Projeto 4</li>
+                    <li><a href="https://alainefsc.github.io/mulhernatech/" target="_blank">Website</a></li>
+                    <li><a href="https://alainefsc.github.io/todolist/" target="_blank">Todolist</a></li>
+                    <li><a href="https://alainefsc.github.io/chronos/" target="_blank">Cronômetro</a></li>
+                    <li><a href="https://alainefsc.github.io/game/" target="_blank">Jogo</a></li>
+                    
 
                 </ul>
             </div>
 
             <div class="projects-armazenamento">
                 <ul aria-label="navagação de projetos e websites">
-
+                    
                     <li><img src="imagens/website.jpg" alt="site sobre uma mulher negra que influenciou o mundo tech"></li>
                     <li><img src="imagens/todolist.jpg" alt="tarefas com prazoum todolist simples que você consegue acompanhar as suas "></li>
                     <li><img src="imagens/relogio.jpg" alt="um cronoometro simples"></li>
@@ -148,18 +148,43 @@
  <a href="https://github.com/alainefsc?tab=repositories" target="_blank"> Veja mais aqui</a>
 </section>
 
+<section id="Contact" class="contato">
+    <div class="sobre-titulo">
+        <h1>Contato</h1>
+        <p>Entre em contato comigo para qualquer dúvida ou consulta.</p>
+    </div>
+
+    <form action="#" method="post" class="formulario-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+
+
 <footer>
+    <div class="sobre-titulo">
+        <h1>Acompanhe</h1>
+                <p>Perfil Profissional- There is all about me</p>
 
     <nav aria-label="navegaçao de links sociais">
 
         <ul class="footer-sociais">
-            <li><i class="fa-brands fa-facebook"> <a href="#"></a></i></li>
-            <li><i class="fa-brands fa-square-instagram"><a href="#"></a></i></li>
-            <li><i class="fa-brands fa-linkedin"><a href="#"></a></i></li>
+            <li><i class="fa-brands fa-facebook"> <a href="https://www.facebook.com/alainefonseca" target="_blank"></a></i></li>
+            <li><i class="fa-brands fa-square-instagram"><a href="https://www.instagram.com/alainefsc/" target="_blank"></a></i></li>
+            <li><i class="fa-brands fa-linkedin"><a href="nkedin.com/in/alaínefonseca/" target="_blank"></a></i></li>
     
         </ul>
     </nav>
-    <p class="footer-comercial">Feito por ASFonseca com o conteúdo do DEVsaber &copy; -2023</p>
+    <p class="footer-comercial">Feito por ASFonseca com o conteúdo do-  DEV Saber  &copy; -2023</p>
 
     </p>
 </footer>
@@ -167,3 +192,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
