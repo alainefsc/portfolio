@@ -172,8 +172,8 @@ body{
    } 
 
    .sobre-titulo p{ 
-    color: #707070;
-    font-size: 1.5rem;
+    color: #c5bdbd;
+    font-size: 1.6rem;
     margin-bottom: 1rem;
     position: relative;
 
@@ -223,7 +223,7 @@ animation: sobeSeção .5s ease-in-out forwards;
     } 
 
     .sobre-texto h1{ 
-        font: 2.5rem;
+        font: 1.8rem;
         color: #f1e8e8;  
         grid-column: 1/-1;
 
@@ -460,7 +460,7 @@ animation: sobeSeção .5s ease-in-out forwards;
 .projects-models ul li{ 
     cursor: pointer;
     font-family: 'poppins';
-    background-color: #222;
+    background-color: #222222;
     border: 1px solid #333;
     padding: 1px 20px;
     color: #383737;
@@ -490,7 +490,7 @@ animation: sobeSeção .5s ease-in-out forwards;
 }
 
 .projects a{ 
-    background-color: #222;
+    background-color: #807c7c;
     text-decoration: none;
     justify-self: center;
     padding:  20px 40px;
@@ -499,6 +499,7 @@ animation: sobeSeção .5s ease-in-out forwards;
 }
 .projects-armazenamento ul li img:hover {
     transform: scale(1.05); 
+    
 }
 
 
@@ -571,6 +572,7 @@ footer {
 
 .formulario-contato label {
     font-weight: bold;
+    color: white;
 }
 
 .formulario-contato input,

@@ -23,3 +23,5 @@ ativaMenu.addEventListener('click', () => {
     ativaMenu.classList.toggle('fa-x'); 
     navMenu.classList .toggle('ativado')
 });
+
+
