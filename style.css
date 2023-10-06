@@ -156,7 +156,7 @@ body{
     padding: 40px;
 
    } 
-
+  
   .sobre-titulo { 
     margin: 30px 0;
     grid-column: 1/-1;
@@ -518,8 +518,8 @@ footer {
 }
 
 .sobre-titulo p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 1.2rem;
+    color: #afabab;
 }
 
 .footer-sociais {
